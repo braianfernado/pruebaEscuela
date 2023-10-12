@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x6vz8b7V/qHMJNBqflvbI7h6ISD89U8htsky9AZ6vbl5ejdSdP72dvi13ck1EFttg4anSR1GyQT4gWf0Jm9BvA==",
+  "dgSpecHash": "w7iDI/j2Fs9Hwd0z5a8Cnqfkvh7vZosfqlURqxzt7Dh7quM0bZXCsgHkKUl3TkJKhnaasdGsb9s64mGXmQi6uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Katherine y Braian\\Desktop\\AngularEscuela\\BackEndApi\\BackEndApi\\BackEndApi.csproj",
+  "projectFilePath": "C:\\Users\\Katherine y Braian\\Documents\\GitHub\\pruebaEscuela\\BackEndApi\\BackEndApi\\BackEndApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Katherine y Braian\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Katherine y Braian\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

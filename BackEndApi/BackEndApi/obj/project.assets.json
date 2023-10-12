@@ -3789,11 +3789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Katherine y Braian\\Desktop\\AngularEscuela\\BackEndApi\\BackEndApi\\BackEndApi.csproj",
+      "projectUniqueName": "C:\\Users\\Katherine y Braian\\Documents\\GitHub\\pruebaEscuela\\BackEndApi\\BackEndApi\\BackEndApi.csproj",
       "projectName": "BackEndApi",
-      "projectPath": "C:\\Users\\Katherine y Braian\\Desktop\\AngularEscuela\\BackEndApi\\BackEndApi\\BackEndApi.csproj",
+      "projectPath": "C:\\Users\\Katherine y Braian\\Documents\\GitHub\\pruebaEscuela\\BackEndApi\\BackEndApi\\BackEndApi.csproj",
       "packagesPath": "C:\\Users\\Katherine y Braian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Katherine y Braian\\Desktop\\AngularEscuela\\BackEndApi\\BackEndApi\\obj\\",
+      "outputPath": "C:\\Users\\Katherine y Braian\\Documents\\GitHub\\pruebaEscuela\\BackEndApi\\BackEndApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

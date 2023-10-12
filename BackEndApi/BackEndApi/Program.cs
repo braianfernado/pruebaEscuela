@@ -147,6 +147,24 @@ app.MapGet("/Materia/lista", async (
         return Results.NotFound();
 });
 
+app.MapPost("/Materia/guardar", async (
+
+    MateriaDTOs modelo,
+     IMateriaService _materiaService,
+    IMapper _mapper
+
+
+    ) => {
+
+        var _Materia = _mapper.Map<Materia>(modelo);
+        var _MateriaCreada = await _materiaService.add(_Materia);
+
+        if (_MateriaCreada.MateriaId != 0)
+            return Results.Ok(_mapper.Map<MateriaDTOs>(_MateriaCreada));
+        else return Results.StatusCode(StatusCodes.Status500InternalServerError);
+
+    });
+
 #endregion
 
 app.UseCors("NuevaPolitica");
