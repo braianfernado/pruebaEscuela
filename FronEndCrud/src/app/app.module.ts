@@ -23,11 +23,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 // para trabajar con cuadrillas
 import {MatGridListModule} from '@angular/material/grid-list';
+import { DialogoAddEditComponent } from './Dialogs/dialogo-add-edit/dialogo-add-edit.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DialogoAddEditComponent
   ],
   imports: [
     BrowserModule,MatFormFieldModule,MatInputModule,
