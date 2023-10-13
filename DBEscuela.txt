@@ -1,0 +1,46 @@
+create database DBEscuela
+
+use DBEscuela
+
+
+CREATE TABLE Estudiantes (
+    EstudianteID INT PRIMARY KEY,
+    Nombre NVARCHAR(100),
+);
+
+CREATE TABLE Materias (
+    MateriaID INT PRIMARY KEY,
+    NombreMateria NVARCHAR(100)
+);
+
+CREATE TABLE Profesores (
+    ProfesorID INT PRIMARY KEY,
+    Nombre NVARCHAR(100)
+);
+	
+
+CREATE TABLE EstudiantesMaterias (
+    EstudianteID INT,
+    MateriaID INT,
+    ProfesorID INT,
+    FOREIGN KEY (EstudianteID) REFERENCES Estudiantes(EstudianteID),
+    FOREIGN KEY (MateriaID) REFERENCES Materias(MateriaID),
+    FOREIGN KEY (ProfesorID) REFERENCES Profesores(ProfesorID),
+    PRIMARY KEY (EstudianteID, MateriaID)
+);
+
+
+INSERT INTO Estudiantes ( Nombre) VALUES ( 'braian');
+INSERT INTO Estudiantes ( Nombre) VALUES ( 'david');
+
+
+INSERT INTO Materias ( NombreMateria) VALUES ( 'Matemáticas');
+INSERT INTO Materias ( NombreMateria) VALUES ( 'Historia');
+INSERT INTO Materias ( NombreMateria) VALUES ( 'Ciencias');
+
+
+INSERT INTO Profesores ( Nombre) VALUES ('Profesor Matemáticas');
+INSERT INTO Profesores ( Nombre) VALUES ('Profesor Historia');
+INSERT INTO Profesores ( Nombre) VALUES ('Profesor Ciencias');
+
+

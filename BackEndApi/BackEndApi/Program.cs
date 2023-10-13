@@ -22,6 +22,7 @@ builder.Services.AddDbContext<DbescuelaContext>(options => {
 
 builder.Services.AddScoped<IEstudianteService, EstudianteService>();
 builder.Services.AddScoped<IMateriaService, MateriaService>();
+builder.Services.AddScoped<IProfesoreService, ProfesorService>();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddCors(options=>
@@ -166,6 +167,27 @@ app.MapPost("/Materia/guardar", async (
     });
 
 #endregion
+
+
+#region
+app.MapGet("/Profesor/lista", async (
+    IProfesoreService _profesoreService,
+    IMapper _mapper
+
+    ) =>
+{
+    var listaProfesor = await _profesoreService.GetList();
+    var listaProfesorDTO = _mapper.Map<List<ProfesorDTOs>>(listaProfesor);
+
+
+    if (listaProfesorDTO.Count > 0)
+        return Results.Ok(listaProfesorDTO);
+    else
+        return Results.NotFound();
+});
+
+#endregion
+
 
 app.UseCors("NuevaPolitica");
 app.Run();

@@ -17,6 +17,10 @@ namespace BackEndApi.Utilidades
             #region Materia
             CreateMap<Materia, MateriaDTOs>().ReverseMap();
             #endregion
+
+            #region profesor
+            CreateMap<Profesore, ProfesorDTOs>().ReverseMap();
+            #endregion
         }
 
     }
