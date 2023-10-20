@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="resources/css/estilos.css">
-<h1>holaaa</h1>
+<h1>SistemaCrud</h1>
 
 @if(Session::has('mensaje'))
 {{Session::get('mensaje') }}
