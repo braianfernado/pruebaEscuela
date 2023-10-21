@@ -63,8 +63,9 @@ class PersonalController extends Controller
         $datosPersonal = request()->except(['_token','_method']);
         Personal::where('id','=',$id)->update($datosPersonal);
 
-        $personal=Personal::findOrFail($id);
-        return view('personal.edit', compact('personal'));
+        //$personal=Personal::findOrFail($id);
+      //  return view('personal.edit', compact('personal'));
+        return redirect('personal');
 
     }
 
